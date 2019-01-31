@@ -1,15 +1,26 @@
-@import url("https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans:800");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800");
 
 body {
     background-color:#f9fafc;
     font-family: 'Open Sans', sans-serif;
 }
 
-.logo {
+.logo h1 {
     text-decoration: none;
     color: #000;
-    font-size: 16px;
-    padding: 20px
+    font-size: 20px;
+    padding: 20px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+
+h1 {
+    text-decoration: none;
+    color: #000;
+    font-size: 40px;
+    padding: 0px 100px 0px 0px;
+    font-family: 'Open Sans';
+    font-weight: 400;
 }
 
 a {
@@ -45,13 +56,14 @@ nav {
 /* main content */
 
 .bodycopy {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    padding: 20px;
+    margin: auto;
+}
 
-  }
+section {
+    flex-basis: 50%; 
+    margin: auto;
+
+}
 
 .text {
     width: 10%;
@@ -68,7 +80,7 @@ nav {
 #outter{
     width: 300px;
     height: 300px;
-    position: absolute;
+
   }
   
   .pink{
@@ -90,7 +102,7 @@ nav {
     left: 70%;
     width: 40%;
     height: 40%;
-    background-color:rgba(207, 130, 213, 0.6); 1]
+    background-color:rgba(207, 130, 213, 0.6);
 
   }
 
@@ -121,7 +133,7 @@ button {
 }
 
 .button2 {
-    padding-top: 300px;
+    padding-top: 100px;
 }
 
 button:hover {
@@ -133,7 +145,15 @@ button:hover {
 
 
 
-
+@media (min-width: 900px) {
+   .bodycopy {
+       display: flex;
+       justify-content: space-around;
+       margin: auto;
+       padding-top: 100px;
+       padding-left: 100px;
+   } 
+}
 
 @media (max-width: 595px) {
     .main-header {
@@ -146,12 +166,13 @@ button:hover {
     nav {
         flex-direction: column;
         text-align: center;
-        justify-content: left;
-        align-items: left;
-        align-self: left;
+        justify-content: center;
+        padding: 0px 100px 40px 0px;
 
     }
-
+    
+    .button2 {
+        padding: 50px 0px 0px 110px;
+    }
     
 }
- 
